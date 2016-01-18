@@ -1,8 +1,8 @@
 # DoLuong_PSNR
-B1:sau khi tai file source code ve giai nen thu muc
-B2:cd src/
+B1:sau khi tai file source code ve giai nen thu muc.
+B2:cd src/.
 B3:sua trong file stats.cpp.
-Tim den doan 
+Tim den doan .
 namespace stats {
 	static double compute_psnr(const unsigned char *ref, const unsigned char *cmp, const unsigned int& sz) {
 		double mse = 0.0;
@@ -15,7 +15,7 @@ namespace stats {
 	//////sua cai nay	return 100.0*log10(65025.0/mse);
 		return 3.0*log10(65025.0/mse);
 	}
-	B4:make
-	B5:su dung cau lenh
+B4:make.
+B5:su dung cau lenh.
 	qpsnr -r SEND.h264 RECEIVE.h264
-	thu vao file text, duoc chi so PSNR
+thu vao file text, duoc chi so PSNR.
